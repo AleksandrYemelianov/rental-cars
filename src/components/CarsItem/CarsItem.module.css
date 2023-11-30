@@ -1,0 +1,30 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 274px;
+  margin-left: 29px;
+  margin-bottom: 50px;
+}
+
+.imgWrapper {
+  position: relative;
+  height: 268px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(
+      180deg,
+      rgba(18, 20, 23, 0.5) 2.5%,
+      rgba(18, 20, 23, 0) 41.07%
+    ),
+    #f3f3f2;
+}
+
+.cardIcon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  stroke: var(--accent-light-color);
+}

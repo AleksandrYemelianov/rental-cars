@@ -1,0 +1,37 @@
+.carDetailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--description-text-color);
+}
+
+.carDetailsTextSecond {
+  display: flex;
+}
+
+.carDetailsTextFirst {
+  display: flex;
+}
+
+.carDetailsTextSecond:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: var(--splitter-color);
+}
+
+.carDetailsTextFirst:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: var(--splitter-color);
+}

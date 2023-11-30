@@ -1,7 +1,10 @@
+import { Catalog } from "pages/Catalog/Catalog";
+import { Container } from "./Container/Container";
 
 export const App = () => {
   return (
-    <div >
-    </div>
+    <Container>
+      <Catalog/>
+    </Container>
   );
 }

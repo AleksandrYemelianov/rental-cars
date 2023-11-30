@@ -1,13 +1,94 @@
+:root {
+  --primary-light-color: #3470ff;
+  --primary-dark-color: #0b44cd;
+  --primary-text-color: #121417;
+  --label-text-color: #8a8a89;
+  --description-text-color: rgba(18, 20, 23, 0.5);
+  --select-text-color: rgba(18, 20, 23, 0.2);
+  --light-color: rgba(255, 255, 255, 1);
+  --accent-light-color: rgba(255, 255, 255, 0.8);
+  --splitter-color: rgba(18, 20, 23, 0.1);
+}
+
+@import-normalize;
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/Manrope-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  color: var(--primary-text-color);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
