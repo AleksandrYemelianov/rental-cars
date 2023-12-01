@@ -8,25 +8,11 @@
   color: var(--description-text-color);
 }
 
-.carDetailsTextSecond {
+.carDetailsText {
   display: flex;
 }
 
-.carDetailsTextFirst {
-  display: flex;
-}
-
-.carDetailsTextSecond:not(:last-child)::after {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 16px;
-  margin-left: 6px;
-  margin-right: 6px;
-  background-color: var(--splitter-color);
-}
-
-.carDetailsTextFirst:not(:last-child)::after {
+.carDetailsText:not(:last-child)::after {
   content: '';
   display: inline-block;
   width: 1px;

@@ -1,0 +1,27 @@
+.Button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.42;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: var(--primary-light-color);
+  color: var(--light-color);
+  transition: background-color var(--transition);
+}
+
+.Button:hover,
+.Button:focus {
+  background-color: var(--primary-dark-color);
+}
+
+.ButtonM {
+  height: 48px;
+  margin-left: 18px;
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.ButtonL {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}

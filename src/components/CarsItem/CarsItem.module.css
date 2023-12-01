@@ -22,9 +22,28 @@
 
 .cardIcon {
   position: absolute;
+  cursor: pointer;
   top: 14px;
   right: 14px;
   width: 18px;
   height: 18px;
+  fill: transparent;
+  stroke: var(--accent-light-color);
+  transition: stroke var(--transition);
+}
+
+.cardIcon:hover,
+.cardIcon:focus {
+  stroke: var(--primary-dark-color);
+}
+
+.cardIconActive {
+  fill: var(--primary-dark-color);
+  stroke: var(--primary-dark-color);
+  transition: stroke var(--transition);
+}
+
+.cardIconActive:hover,
+.cardIconActive:focus {
   stroke: var(--accent-light-color);
 }

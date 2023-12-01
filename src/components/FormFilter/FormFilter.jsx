@@ -5,27 +5,33 @@ import css from './FormFilter.module.css';
 
 export const FormFilter = () => {
     return (
-        <form action="" className={css.formContainer}>
-            <div style={{ display: 'flex' }}>
-                <label style={{ display: 'flex', flexDirection: 'column' }}>
-                    Car brand
-                    <select name="model">
-                        <option value=""></option>
-                    </select>
-                </label>
-                <label style={{ display: 'flex', flexDirection: 'column' }}>
-                    Price/ 1 hour
-                    <select name="price">
-                        <option value=""></option>
-                    </select>
-                </label>
-                <label style={{ display: 'flex', flexDirection: 'column' }}>
-                    Сar mileage / km
-                    <input type="text" placeholder="From" />
-                    <input type="text" placeholder="To" />
-                </label>
-            </div>
-            <Button text={'Search'} />
+        <form className={css.formContainer}>
+            <label className={css.formLabel}>
+                Car brand
+                <select name="model" className={`${css.formElement} ${css.formElementBrand}`}>
+                    <option value="" selected className={css.formOptionDefault}>Enter the text</option>
+                </select>
+            </label>
+            <label className={css.formLabel}>
+                Price / 1 hour
+                <select name="price" className={`${css.formElement} ${css.formElementPrice}`}>
+                    <option value="" selected className={css.formOptionDefault}>To $</option>
+                </select>
+            </label>
+            <label className={css.formLabel}>
+                Сar mileage / km
+                <div className={css.formInputWrapper}>
+                    <div className={css.formInputRelative}>
+                        <input type="text" className={css.formElementInput} />
+                        <p className={css.formElementInputText}>From:</p>
+                    </div>
+                    <div className={css.formInputRelative}>
+                        <input type="text" className={`${css.formElementInput} ${css.formElementInputLast}`} />
+                        <p className={css.formElementInputText}>To:</p>
+                    </div>
+                </div>
+            </label>
+            <Button type={'submit'} size={'m'} text={'Search'} />
         </form>
     )
 };
