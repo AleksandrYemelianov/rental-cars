@@ -1,9 +1,8 @@
-<img src="./src/images/car-rental.jpg" alt="Rental Car" width="300" height="300" />
+<div style="text-align: center;"><img src="./src/images/car-rental.jpg" alt="Rental Car" width="300" height="300" /></div>
 
---------------------------------Rental Cars
-App-------------------------------------------
+<h1 style="text-align: center; color: #3470ff;">Rental Cars App</h1>
 
-A car rental app is an online platform that allows users to rent cars for
+<p style="color: #121417;">A car rental app is an online platform that allows users to rent cars for
 personal or business use. The app provides an easy-to-use interface for
 searching and booking, as well as storing your favourite cars. The app has a
-wide selection of cars that vary in make, model, size and price.
+wide selection of cars that vary in make, model, size and price.</p>
