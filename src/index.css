@@ -1,3 +1,5 @@
+@import-normalize;
+
 :root {
   --primary-light-color: #3470ff;
   --primary-dark-color: #0b44cd;
@@ -14,8 +16,6 @@
   --condition-background: #f9f9f9;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@import-normalize;
 
 @font-face {
   font-family: 'Manrope';

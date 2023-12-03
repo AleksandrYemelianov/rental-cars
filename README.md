@@ -14,6 +14,6 @@ wide selection of cars that vary in make, model, size and price.</p>
 </ul>
 
 <h2 style="color: #3470ff;">Screenshots of the Project:</h2>
-<img src="./src/images/screenshots/Screenshot_1.png" alt="Rental Car" width="800" height="800"/>
-<img src="./src/images/screenshots/Screenshot_2.png" alt="Rental Car" width="800" height="800"/>
-<img src="./src/images/screenshots/Screenshot_3.png" alt="Rental Car" width="800" height="800"/>
+<img src="./assets/screenshots/Screenshot_1.png" alt="Rental Car" width="800" height="800"/>
+<img src="./assets/screenshots/Screenshot_2.png" alt="Rental Car" width="800" height="800"/>
+<img src="./assets/screenshots/Screenshot_3.png" alt="Rental Car" width="800" height="800"/>
