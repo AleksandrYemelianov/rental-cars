@@ -11,7 +11,7 @@ export const App = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route path="/catalog" element={<SharedLayout />}>
+        <Route path="/" element={<SharedLayout />}>
           <Route path='catalog' element={<CatalogPage />} />
           <Route path='favorites' element={<FavoritesPage />} />
         </Route>
