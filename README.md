@@ -1,4 +1,4 @@
-<div style="text-align: center;"><img src="./src/images/car-rental.jpg" alt="Rental Car" width="300" height="300" /></div>
+<div style="width: 100%;"><img src="./src/images/car-rental.jpg" alt="Rental Car" width="300" height="300" style="margin-left: auto;  margin-right: auto;"/></div>
 
 <h1 style="text-align: center; color: #3470ff;">Rental Cars App</h1>
 
