@@ -12,13 +12,11 @@ export const App = () => {
     <Suspense fallback={<Loader/>}>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          {/* <Route index element={<Home/>} /> */}
             <Route path='catalog' element={<CatalogPage />}/>
             <Route path='favorites' element={<FavoritesPage />} />
         </Route>
       </Routes>
     </Suspense>
-
   )
 };
 

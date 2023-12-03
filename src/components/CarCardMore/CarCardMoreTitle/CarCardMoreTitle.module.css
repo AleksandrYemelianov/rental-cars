@@ -1,0 +1,17 @@
+.moreTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.moreTitle {
+  display: flex;
+  gap: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.moreTitleAccent {
+  color: var(--primary-light-color);
+}

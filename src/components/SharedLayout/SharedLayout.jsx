@@ -9,11 +9,9 @@ const SharedLayout = () => {
     return (
         <Container>
             <nav className={css.header}>
-                {/* <NavLink to='/' className={({isActive}) => isActive ? css.active : css.link}>Home</NavLink> */}
                 <NavLink to='/catalog' className={({isActive}) => isActive ? css.active : css.link}>Catalog</NavLink>
                 <NavLink to='/favorites' className={({isActive}) => isActive ? css.active : css.link}>Favorites</NavLink>
             </nav>
-            {/* <div className={css.background} style={{ backgroundImage: `url(${mainBackground})` }}></div> */}
             <Section>
                 <Suspense>
                     <Outlet/>

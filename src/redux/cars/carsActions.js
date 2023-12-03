@@ -22,8 +22,9 @@ export const setCarsEmpty = () => {
     type: SET_CARS_EMPTY,
   };
 }
-export const setLoadMore = () => {
+export const setLoadMore = (boolean) => {
       return {
-    type: SET_LOAD_MORE,
+        type: SET_LOAD_MORE,
+        payload: boolean,  
   };
 }

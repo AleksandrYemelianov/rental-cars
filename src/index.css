@@ -10,7 +10,8 @@
   --light-color: rgba(255, 255, 255, 1);
   --accent-light-color: rgba(255, 255, 255, 0.8);
   --splitter-color: rgba(18, 20, 23, 0.1);
-
+  --condition-color: #363535;
+  --condition-background: #f9f9f9;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -76,10 +77,6 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 ul {

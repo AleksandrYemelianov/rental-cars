@@ -15,7 +15,7 @@ export const fetchAllCars = ({
       const { data } = await instance.get(`/adverts?page=${page}&limit=${limit}&make=${make}`);
       const dataCurrent = await filteringCars(data, priceTo, mileageFrom, mileageTo)
       if (dataCurrent.length < limit) {
-        dispatch(setLoadMore());
+        dispatch(setLoadMore(true));
       }
       dispatch(fetchAllCarsFulfilled(dataCurrent));
     } catch (error) {

@@ -18,7 +18,7 @@ export const carsReducer = (state = initialState, action) => {
         case SET_CARS_EMPTY:
             return { ...state, isLoading: false, cars: [] };
         case SET_LOAD_MORE:
-            return { ...state, isLoadMore: true};
+            return { ...state, isLoadMore: action.payload};
         default:
             return state;
     }

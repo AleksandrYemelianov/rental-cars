@@ -1,0 +1,33 @@
+.moreFeaturesContainer {
+  margin-bottom: 24px;
+}
+
+.moreFeaturesTitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 1.43;
+}
+
+.moreFeaturesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moreFeaturesText {
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--description-text-color);
+}
+
+.moreFeaturesText:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: var(--splitter-color);
+}

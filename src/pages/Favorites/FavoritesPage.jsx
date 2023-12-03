@@ -1,26 +1,24 @@
-// import { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { getCars } from 'redux/cars/carsSelectors';
-// import { getFilters } from 'redux/filters/filtersSelectors';
-// import { fetchAllCars } from 'redux/cars/carsOperations';
-import { FormFilter } from 'components/FormFilter/FormFilter'
-// import { CarsList } from 'components/CarsList/CarsList';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setCarsEmpty, setLoadMore } from 'redux/cars/carsActions';
+import { setFilter } from 'redux/filters/filtersAction';
+import { FavoritesList } from 'components/FavoritesList/FavoritesList';
+
 
 const FavoritesPage = () => {
-    // const dispatch = useDispatch();
-    // const cars = useSelector(getCars);
-    // const params = useSelector(getFilters);
+  const dispatch = useDispatch();
 
-    // useEffect(() => {
-    //   dispatch(fetchAllCars(params));
-    // }, [dispatch, params]);
+  useEffect(() => {
+    dispatch(setCarsEmpty());
+    dispatch(setLoadMore(false));
+    dispatch(setFilter({ page: 1 }));
+  }, [dispatch]);
 
-    return (
-      <>
-        <FormFilter />
-        {/* <CarsList cars={cars} /> */}
-      </>
-    );
+  return (
+    <>
+      <FavoritesList />
+    </>
+  );
 };
 
 export default FavoritesPage
