@@ -1,0 +1,11 @@
+.formLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: var(--label-text-color);
+}
+.formLabel:not(:first-child) {
+  margin-left: 18px;
+}

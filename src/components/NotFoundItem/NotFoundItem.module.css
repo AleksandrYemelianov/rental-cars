@@ -1,0 +1,17 @@
+.notFoundItemContainer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: var(--label-text-color);
+  width: 30%;
+}
+
+.notFoundItemWrapperImg {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-light-color);
+  overflow: hidden;
+}

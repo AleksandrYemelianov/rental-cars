@@ -1,0 +1,7 @@
+.formInputWrapper {
+  display: flex;
+  margin-top: 8px;
+  border-radius: 14px;
+  background-color: var(--form-element-background);
+  overflow: hidden;
+}

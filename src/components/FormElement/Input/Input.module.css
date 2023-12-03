@@ -1,0 +1,42 @@
+.inputRelative {
+  position: relative;
+}
+
+.input {
+  padding: 14px 24px;
+  padding-left: 74px;
+  width: 160px;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  border: 1px solid transparent;
+
+  background-color: var(--form-element-background);
+}
+.inputFrom {
+  border-right: 1px solid var(--input-border);
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.inputTo {
+  border-left: 1px solid transparent;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding-left: 53px;
+}
+
+.inputFrom:focus-visible,
+.inputTo:focus-visible {
+  outline: none;
+}
+
+.inputText {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}

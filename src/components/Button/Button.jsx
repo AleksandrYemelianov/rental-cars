@@ -1,7 +1,7 @@
 import React from 'react'
 import css from './Button.module.css';
 
-export const Button = ({ type = 'button', size, text }) => {
+export const Button = ({ type = 'button', onClick, size, text }) => {
   let style = null
   if (size === 's') {
     style = css.ButtonS
@@ -9,9 +9,11 @@ export const Button = ({ type = 'button', size, text }) => {
     style = css.ButtonM
   } else if (size === 'l') {
     style = css.ButtonL
+  } else if (size === 'link') {
+    style = css.ButtonLink
   }
 
   return (
-    <button type={type} className={`${css.Button} ${style}`}>{text}</button>
+    <button type={type} onClick={onClick} className={`${css.Button} ${style}`}>{text}</button>
   )
 }

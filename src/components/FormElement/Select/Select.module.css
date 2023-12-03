@@ -1,0 +1,27 @@
+.select {
+  margin-top: 8px;
+  padding: 14px 18px;
+  background-color: var(--form-element-background);
+  border: 1px solid transparent;
+  border-radius: 14px;
+}
+
+.select:focus-visible {
+  outline: none;
+}
+
+.selectBrand {
+  width: 224px;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+
+.selectPrice {
+  width: 125px;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}

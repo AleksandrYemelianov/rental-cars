@@ -24,4 +24,24 @@
 .ButtonL {
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-top: auto;
+}
+
+.ButtonLink {
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--primary-light-color);
+}
+
+.ButtonLink:hover,
+.ButtonLink:focus {
+  color: var(--primary-dark-color);
+  background-color: transparent;
 }

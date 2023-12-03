@@ -1,4 +1,4 @@
-import { FETCH_ALL_CARS_FULFILLED, FETCH_ALL_CARS_PENDING, FETCH_ALL_CARS_REJECTED } from "./carsTypeActions";
+import { FETCH_ALL_CARS_FULFILLED, FETCH_ALL_CARS_PENDING, FETCH_ALL_CARS_REJECTED, SET_CARS_EMPTY, SET_LOAD_MORE } from "./carsTypeActions";
 
 export const fetchAllCarsPending = () => {
       return {
@@ -15,5 +15,15 @@ export const fetchAllCarsRejected = (message) => {
       return {
     type: FETCH_ALL_CARS_REJECTED,
     payload: message,
+  };
+}
+export const setCarsEmpty = () => {
+      return {
+    type: SET_CARS_EMPTY,
+  };
+}
+export const setLoadMore = () => {
+      return {
+    type: SET_LOAD_MORE,
   };
 }

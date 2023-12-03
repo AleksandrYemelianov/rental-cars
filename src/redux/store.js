@@ -1,8 +1,25 @@
-import { createStore, applyMiddleware  } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools  } from "@redux-devtools/extension";
-import { rootReducer } from "./cars/carsReducers";
 import thunk from 'redux-thunk';
+import { rootReducer } from "./index";
+// import {
+//   persistStore,
+//   persistReducer,
+// } from 'redux-persist';
+// import storage from 'redux-persist/lib/storage';
 
-const enhancer = composeWithDevTools(applyMiddleware(thunk));
+// const persistConfig = {
+//     key: 'main',
+//     storage,
+//     whitelist: ['filters'],
+// };
 
-export const store = createStore(rootReducer, enhancer);
+// const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = createStore(
+  // persistedReducer,
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
+
+// export const persistor = persistStore(store);
